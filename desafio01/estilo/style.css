@@ -32,6 +32,7 @@
 body{
     background-color: var(--cor1);
     font-family: var(--Principal);
+   
 
 }
 
@@ -40,15 +41,33 @@ header{
     height: 150px;
     text-align: center;
     margin: auto;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
     
 }
 
 header > h1{
     font-family: var(--destaque);
     padding: 20px;
+    font-size: 2.8em;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.651) 2px 2px 4px;
+
 }
 header > p{
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.651) 2px 2px 4px;
+    margin: auto;
+
+}
+
+a{
+    color: #7672F2;
+    text-decoration: none;
+    font-weight: bold;
     
+}
+a.emoji::after{
+    content: "\1F517";
 }
 
 nav{
@@ -65,7 +84,7 @@ nav>a{
 
 main{
     background-color: white;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     padding: 15px;
 }
@@ -74,26 +93,70 @@ main>h1{
     font-family: var(--Android);
     color: var(--cor5);
     
+    
 }
 
-main>h2,h3{
+main>h2{
     font-family: var(--Android);
     color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    padding: 5px;
+}
+
+main>h3{
+    font-family: var(--Android);
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    padding: 5px;
 }
 
 main>p{
     padding: 10px;
+    text-indent: 15px;
+    line-height: 1.8em;
+}
+
+main>aside{
+    background-color: var(--cor1);
+    border-radius: 10px;
+    
+}
+
+main>aside>h3{
+    padding: 10px;
+    font-weight: bold;
+    background-color: var(--cor4);
+    border-radius: 10px 10px 0px 0px;    
+    color: rgb(247, 244, 244);
+    
+    
 }
 
 main>aside>p{
     padding: 10px;
+    line-height: 1.5em;
+    text-indent: 15px;
 }
 
 main>aside>ul{
     list-style-position: inside;
     columns: 2;
     padding: 20px;
+    list-style-type: "\1F5F8";
+    
 }
+
+div{
+    text-align: center;
+
+}
+
+div#video{
+    background-color: #7672F2;
+   
+}
+
+
 
 footer{
     margin-top: 15px;
