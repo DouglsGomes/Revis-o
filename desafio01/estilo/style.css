@@ -48,6 +48,7 @@ header{
 header > h1{
     font-family: var(--destaque);
     padding: 20px;
+    font-weight: normal;
     font-size: 2.8em;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.651) 2px 2px 4px;
@@ -80,24 +81,36 @@ nav>a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+
+}
+nav>a:hover{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    
 }
 
 main{
     background-color: white;
+    min-width: 320px;
     max-width: 800px;
     margin: auto;
     padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    border-radius: 0px 0px 10px 10px;
 }
 
 main>h1{
     font-family: var(--Android);
     color: var(--cor5);
+    font-weight: normal;
     
     
 }
 
 main>h2{
     font-family: var(--Android);
+    font-weight: normal;
     color: var(--cor5);
     background-image: linear-gradient(to right, var(--cor4), transparent);
     padding: 5px;
@@ -105,6 +118,7 @@ main>h2{
 
 main>h3{
     font-family: var(--Android);
+    font-weight: normal;
     color: var(--cor5);
     background-image: linear-gradient(to right, var(--cor4), transparent);
     padding: 5px;
@@ -135,7 +149,7 @@ main>aside>h3{
 main>aside>p{
     padding: 10px;
     line-height: 1.5em;
-    text-indent: 15px;
+    text-indent: 15px;          
 }
 
 main>aside>ul{
@@ -146,18 +160,33 @@ main>aside>ul{
     
 }
 
-div{
-    text-align: center;
-
-}
-
 div#video{
     background-color: #7672F2;
-   
+    margin: 0px -15px 30px -15px;
+    padding: 20px;
+    padding-bottom: 40%;
+    position: relative;
+    
+
 }
 
+div#video > iframe{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    
+}
+img{
+    width: 100%;
+}
 
-
+main > img.pq{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
 footer{
     margin-top: 15px;
     background-color: var(--cor3);
