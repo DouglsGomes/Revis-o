@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*
+Paleta de cores:
+    Verde: #49a09d
+    Lílas: #5f2c82
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: #5f2c82;
+}
+
+
+section{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+section > h1{
+    text-align: center;
+    padding: 10px;
+}
+
+section > p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.79em;
+    line-height: 18px;
+}
+
+section#tela{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+section> div#img{
+    background-image: url(/desafio03/imagens/pexels-max-w-1673439416-31616220.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
