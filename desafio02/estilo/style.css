@@ -37,13 +37,46 @@ main{
 
 }
 
+section{
+    padding: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section >p{
+    padding-bottom: 2em;
+}
+
 main > section.normal{
     background-attachment: scroll;
-    height: 400px;
-    padding-left: 30px;
-    padding-top: 40px;
-    line-height: 2em;
-    font-size: 2.5vw;
+}
+
+main > section.imagem{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    background-attachment: fixed;
+    
+}
+
+main > section.imagem >  p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+section#img1{
+   background-image: url(/desafio02/imagens/background001.jpg);
+   background-position: right center;
+   background-size: cover;
+}
+
+section#img2{
+    background-image: url(/desafio02/imagens/background002.jpg);
+    
+    background-position: right center;
+    background-size: cover;
 }
 
 a{
@@ -52,39 +85,6 @@ a{
     
 }
 
-main>section#img1{
-   
-    background-image: url(/desafio02/imagens/background001.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 20px;
-    height: 100vh;
-    height: 400px;
-    padding-left: 30px;
-    padding-top: 40px;
-    line-height: 2em;
-    font-size: 2.5vw;
-}
-
-main>section#img2{
-   
-    background-image: url(/desafio02/imagens/background002.jpg);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 20px;
-    height: 100vh;
-    height: 400px;
-    padding-left: 30px;
-    padding-top: 40px;
-    line-height: 2em;
-    font-size: 2.5vw;
-}
 
 
 a:hover{
